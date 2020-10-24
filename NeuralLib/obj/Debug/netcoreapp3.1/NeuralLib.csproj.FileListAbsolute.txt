@@ -1,0 +1,9 @@
+/home/canned/RiderProjects/nn_rofle/NeuralLib/bin/Debug/netcoreapp3.1/NeuralLib.deps.json
+/home/canned/RiderProjects/nn_rofle/NeuralLib/bin/Debug/netcoreapp3.1/NeuralLib.dll
+/home/canned/RiderProjects/nn_rofle/NeuralLib/bin/Debug/netcoreapp3.1/NeuralLib.pdb
+/home/canned/RiderProjects/nn_rofle/NeuralLib/obj/Debug/netcoreapp3.1/NeuralLib.csprojAssemblyReference.cache
+/home/canned/RiderProjects/nn_rofle/NeuralLib/obj/Debug/netcoreapp3.1/NeuralLib.AssemblyInfoInputs.cache
+/home/canned/RiderProjects/nn_rofle/NeuralLib/obj/Debug/netcoreapp3.1/NeuralLib.AssemblyInfo.cs
+/home/canned/RiderProjects/nn_rofle/NeuralLib/obj/Debug/netcoreapp3.1/NeuralLib.csproj.CoreCompileInputs.cache
+/home/canned/RiderProjects/nn_rofle/NeuralLib/obj/Debug/netcoreapp3.1/NeuralLib.dll
+/home/canned/RiderProjects/nn_rofle/NeuralLib/obj/Debug/netcoreapp3.1/NeuralLib.pdb

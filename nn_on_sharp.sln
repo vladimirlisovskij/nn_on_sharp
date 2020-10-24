@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeuralLib", "NeuralLib\NeuralLib.csproj", "{88E39D07-74AE-4B4E-8300-9981E2AEBC01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleIris", "ExampleIris\ExampleIris.csproj", "{8A2DAFFD-01F6-486D-8226-10781143D5ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{88E39D07-74AE-4B4E-8300-9981E2AEBC01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88E39D07-74AE-4B4E-8300-9981E2AEBC01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88E39D07-74AE-4B4E-8300-9981E2AEBC01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88E39D07-74AE-4B4E-8300-9981E2AEBC01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A2DAFFD-01F6-486D-8226-10781143D5ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A2DAFFD-01F6-486D-8226-10781143D5ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A2DAFFD-01F6-486D-8226-10781143D5ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A2DAFFD-01F6-486D-8226-10781143D5ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C7D636A-0A70-4920-8C7D-4AF353B6E421}
+	EndGlobalSection
+EndGlobal

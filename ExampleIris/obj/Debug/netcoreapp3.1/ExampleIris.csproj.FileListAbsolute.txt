@@ -1,0 +1,16 @@
+/home/canned/RiderProjects/nn_rofle/ExampleIris/bin/Debug/netcoreapp3.1/ExampleIris
+/home/canned/RiderProjects/nn_rofle/ExampleIris/bin/Debug/netcoreapp3.1/ExampleIris.deps.json
+/home/canned/RiderProjects/nn_rofle/ExampleIris/bin/Debug/netcoreapp3.1/ExampleIris.runtimeconfig.json
+/home/canned/RiderProjects/nn_rofle/ExampleIris/bin/Debug/netcoreapp3.1/ExampleIris.runtimeconfig.dev.json
+/home/canned/RiderProjects/nn_rofle/ExampleIris/bin/Debug/netcoreapp3.1/ExampleIris.dll
+/home/canned/RiderProjects/nn_rofle/ExampleIris/bin/Debug/netcoreapp3.1/ExampleIris.pdb
+/home/canned/RiderProjects/nn_rofle/ExampleIris/bin/Debug/netcoreapp3.1/NeuralLib.dll
+/home/canned/RiderProjects/nn_rofle/ExampleIris/obj/Debug/netcoreapp3.1/ExampleIris.csprojAssemblyReference.cache
+/home/canned/RiderProjects/nn_rofle/ExampleIris/obj/Debug/netcoreapp3.1/ExampleIris.AssemblyInfoInputs.cache
+/home/canned/RiderProjects/nn_rofle/ExampleIris/obj/Debug/netcoreapp3.1/ExampleIris.AssemblyInfo.cs
+/home/canned/RiderProjects/nn_rofle/ExampleIris/obj/Debug/netcoreapp3.1/ExampleIris.csproj.CoreCompileInputs.cache
+/home/canned/RiderProjects/nn_rofle/ExampleIris/obj/Debug/netcoreapp3.1/ExampleIris.csproj.CopyComplete
+/home/canned/RiderProjects/nn_rofle/ExampleIris/obj/Debug/netcoreapp3.1/ExampleIris.dll
+/home/canned/RiderProjects/nn_rofle/ExampleIris/obj/Debug/netcoreapp3.1/ExampleIris.pdb
+/home/canned/RiderProjects/nn_rofle/ExampleIris/obj/Debug/netcoreapp3.1/ExampleIris.genruntimeconfig.cache
+/home/canned/RiderProjects/nn_rofle/ExampleIris/bin/Debug/netcoreapp3.1/iris.data
