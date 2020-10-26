@@ -28,12 +28,12 @@ namespace neuron_list
             for (int batch = 0; batch < data.GetLength(0); ++batch)
             {
                 double sum = 0;
-                for (int neur = 0; neur < data.GetLength(1); ++neur)
+                for (int neur = 0; neur < this._inputs; ++neur)
                 {
                     data[batch, neur] = Math.Exp(data[batch, neur]);
                     sum += data[batch, neur];
                 }
-                for (int neur = 0; neur < data.GetLength(1); ++neur)
+                for (int neur = 0; neur < this._inputs; ++neur)
                 {
                     data[batch, neur] /= sum;
                 }
@@ -46,16 +46,30 @@ namespace neuron_list
         public object Back(object rawData)
         {
             double[] prewLoss = rawData as double[];
-            // [TODO] подсчет суммы один раз, заменить повторные подсчеты вычитанием
-            for (int neur = 0; neur < this._lastRes.GetLength(1); ++neur)
+            
+            double[] sums = new double[this._inputs];
+            for (int neur = 0; neur < this._inputs; ++neur)
             {
-                double curLoss = 0;
                 for (int batch = 0; batch < this._lastRes.GetLength(0); ++batch)
                 {
-                        curLoss += this._lastRes[batch, neur] * (1 - this._lastRes[batch, neur]);
+                    sums[neur] += this._lastRes[batch, neur];
                 }
-                prewLoss[neur] *= curLoss / this._lastRes.GetLength(0);
+
+                sums[neur] /= this._lastRes.GetLength(0);
             }
+
+            for (int neurI = 0; neurI < this._inputs; ++neurI)
+            {
+                double tempSum = 0;
+                for (int neurJ = 0; neurJ < this._inputs; ++neurJ)
+                {
+                    int sig = Convert.ToInt32(neurI == neurJ);
+                    tempSum += sums[neurJ] * (1 - sums[neurI]);
+                }
+
+                prewLoss[neurI] *= tempSum;
+            }
+            
             return prewLoss;
         }
     }
@@ -77,7 +91,7 @@ namespace neuron_list
             {
                 for (int x = 0; x < nOuts; x++)
                 {
-                    _w[y, x] = rnd.Next(-100, 100) / 10.0;
+                    _w[y, x] = rnd.Next(-1000, 1000) / 1000.0;
                 }
             }
             this._bias = new double[nOuts];

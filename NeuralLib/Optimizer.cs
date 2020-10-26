@@ -5,10 +5,10 @@
         double Optimize(double val, double dev);
     }
 
-    public class Stohastic : IOptimizer
+    public class SGD : IOptimizer
     {
         private readonly double _k;
-        public Stohastic(double k)
+        public SGD(double k)
         {
             this._k = k;
         }

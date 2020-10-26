@@ -43,7 +43,7 @@ namespace ExampleIris
                 {
                     temp[tempNeur] = res[batch, tempNeur];
                 }
-                Console.WriteLine(this.Loss.Value(temp, y[batch]));
+                // Console.WriteLine(this.Loss.Value(temp, y[batch]));
                 temp = this.Loss.Derivative(temp, y[batch]) as double[];
                 for (int tempNeur = 0; tempNeur < res.GetLength(1); tempNeur++)
                 {
@@ -67,10 +67,9 @@ namespace ExampleIris
         static void Main(string[] args)
         {
             HeadWraper head = new HeadWraper(new SoftMax(3), new CrossEntopy());
-            BodyWraper body3 = new BodyWraper(new Layer(3, 3, new Sigm(), new Stohastic(0.001)), head);
-            BodyWraper body2 = new BodyWraper(new Layer(5, 3, new Sigm(), new Stohastic(0.001)), body3);
-            BodyWraper body1 = new BodyWraper(new Layer(4, 5, new Sigm(), new Stohastic(0.001)), body2);
-
+            BodyWraper body3 = new BodyWraper(new Layer(4, 3, new Sigm(), new SGD(0.01)), head);
+            BodyWraper body2 = new BodyWraper(new Layer(5, 4, new Sigm(), new SGD(0.01)), body3);
+            BodyWraper body1 = new BodyWraper(new Layer(4, 5, new Sigm(), new SGD(0.01)), body2);
             List<double[]> LX = new List<double[]>();
             List<int> LY = new List<int>();
 
@@ -112,25 +111,36 @@ namespace ExampleIris
             int[] y = LY.ToArray();
             
             Random rnd = new Random();
-            for  (int z = 0; z < 30; ++z)
-            for (int i = 1; i < 150; ++i)
+            for  (int z = 0; z < 10; ++z)
+            for (int i = 3; i < 150; i += 4)
+            {
+                double[,] tempX = new double[4, 4];
+                for (int j = 0; j < 4; ++j)
+                {
+                    tempX[0, j] = x[i][j];
+                    tempX[1, j] = x[i - 1][j];
+                    tempX[2, j] = x[i - 2][j];
+                    tempX[3, j] = x[i - 3][j];
+                }
+                int[] tempY = new int[4] {y[i], y[i-1], y[i-2], y[i-3]};
+                body1.Feed(tempX, tempY);
+            }
+
+            int ok = 0;
+            for (int i = 0; i < 150; ++i)
             {
                 double[,] tempX = new double[1, 4];
                 for (int j = 0; j < 4; ++j) tempX[0, j] = x[i][j];
-                int[] tempY = new int[1] {y[i]};
-                body1.Feed(tempX, tempY);
-            }
-            
-            for (int i = 0; i < 10; ++i)
-            {
-                int num = rnd.Next(0, 149);
-                double[,] tempX = new double[1, 4];
-                for (int j = 0; j < 4; ++j) tempX[0, j] = x[num][j];
                 double[,] res =  body1.Predict(tempX) as double[,];
-                Console.WriteLine("\n\nRES");
-                for (int j = 0; j < 3; ++j) Console.WriteLine(j + " : " + res[0, j]);
-                Console.WriteLine(y[num]);
+                int max_ind = 0;
+                for (int j = 1; j < 3; ++j)
+                {
+                    if (res[0, j] > res[0, max_ind]) max_ind = j;
+                }
+
+                if (max_ind == y[i]) ok++;
             }
+            Console.WriteLine("\n" + ok / 150.0);
             // double[,] res =  body1.Predict(new double[1, 2] {{7.7,2.8}}) as double[,];
             // Console.WriteLine("\n\nRES");
             // for (int j = 0; j < 3; ++j) Console.WriteLine(j + " : " + res[0, j]);

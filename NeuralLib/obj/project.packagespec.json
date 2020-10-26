@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/home/canned/RiderProjects/nn_rofle/NeuralLib/NeuralLib.csproj",
+    "projectUniqueName": "/home/canned/nn_on_sharp/NeuralLib/NeuralLib.csproj",
     "projectName": "NeuralLib",
-    "projectPath": "/home/canned/RiderProjects/nn_rofle/NeuralLib/NeuralLib.csproj",
-    "outputPath": "/home/canned/RiderProjects/nn_rofle/NeuralLib/obj/",
+    "projectPath": "/home/canned/nn_on_sharp/NeuralLib/NeuralLib.csproj",
+    "outputPath": "/home/canned/nn_on_sharp/NeuralLib/obj/",
     "projectStyle": "PackageReference",
     "originalTargetFrameworks": [
       "netcoreapp3.1"

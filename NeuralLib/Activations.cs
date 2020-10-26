@@ -50,14 +50,21 @@ namespace activation
 
     public class ReLU : IActivation
     {
+        private readonly double _param;
+        
+        public ReLU(double param = 0)
+        {
+            this._param = param;
+        }
+        
         public double Value(double x)
         {
-            return Math.Max(0,x);
+            return (x >= 0) ? x : this._param * x;
         }
 
         public double Derivative(double x)
         {
-            return Convert.ToDouble(x >= 0);
+            return (x >= 0) ? 1 : this._param;
         }
     }
 }

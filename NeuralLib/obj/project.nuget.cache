@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "epiNk4RSPSTppAMMQ/trsdXKkwINjTwkEZ9hYLWg+rVSIs0DwI3hbv0kbmu0czUVpcT9zqc5wu2EK+fyJenyEA==",
+  "dgSpecHash": "hiadC9pn1JlbOA7MaLg9UYmaH0nQXONSvXbeJ4uuk8xKGdWQZ0f6YknbFOSZyjo5ocgdOhH0ndDNVlD0Lt+7nQ==",
   "success": true,
-  "projectFilePath": "/home/canned/RiderProjects/nn_rofle/NeuralLib/NeuralLib.csproj",
+  "projectFilePath": "/home/canned/nn_on_sharp/NeuralLib/NeuralLib.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

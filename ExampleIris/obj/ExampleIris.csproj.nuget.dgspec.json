@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/canned/RiderProjects/nn_rofle/ExampleIris/ExampleIris.csproj": {}
+    "/home/canned/nn_on_sharp/ExampleIris/ExampleIris.csproj": {}
   },
   "projects": {
-    "/home/canned/RiderProjects/nn_rofle/ExampleIris/ExampleIris.csproj": {
+    "/home/canned/nn_on_sharp/ExampleIris/ExampleIris.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/canned/RiderProjects/nn_rofle/ExampleIris/ExampleIris.csproj",
+        "projectUniqueName": "/home/canned/nn_on_sharp/ExampleIris/ExampleIris.csproj",
         "projectName": "ExampleIris",
-        "projectPath": "/home/canned/RiderProjects/nn_rofle/ExampleIris/ExampleIris.csproj",
+        "projectPath": "/home/canned/nn_on_sharp/ExampleIris/ExampleIris.csproj",
         "packagesPath": "/home/canned/.nuget/packages/",
-        "outputPath": "/home/canned/RiderProjects/nn_rofle/ExampleIris/obj/",
+        "outputPath": "/home/canned/nn_on_sharp/ExampleIris/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/canned/.nuget/NuGet/NuGet.Config"

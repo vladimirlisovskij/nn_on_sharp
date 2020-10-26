@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/canned/RiderProjects/nn_rofle/NeuralLib/NeuralLib.csproj": {}
+    "/home/canned/nn_on_sharp/NeuralLib/NeuralLib.csproj": {}
   },
   "projects": {
-    "/home/canned/RiderProjects/nn_rofle/NeuralLib/NeuralLib.csproj": {
+    "/home/canned/nn_on_sharp/NeuralLib/NeuralLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/canned/RiderProjects/nn_rofle/NeuralLib/NeuralLib.csproj",
+        "projectUniqueName": "/home/canned/nn_on_sharp/NeuralLib/NeuralLib.csproj",
         "projectName": "NeuralLib",
-        "projectPath": "/home/canned/RiderProjects/nn_rofle/NeuralLib/NeuralLib.csproj",
+        "projectPath": "/home/canned/nn_on_sharp/NeuralLib/NeuralLib.csproj",
         "packagesPath": "/home/canned/.nuget/packages/",
-        "outputPath": "/home/canned/RiderProjects/nn_rofle/NeuralLib/obj/",
+        "outputPath": "/home/canned/nn_on_sharp/NeuralLib/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/canned/.nuget/NuGet/NuGet.Config"
